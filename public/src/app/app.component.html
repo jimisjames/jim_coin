@@ -1,0 +1,28 @@
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'> <!-- Bootstrap -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> <!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous'></script> <!-- Bootstrap -->
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'></script> <!-- Bootstrap -->
+
+<body>
+  <div class="row">
+    <div class="col">
+        <img src="https://www.coinstaker.com/wp-content/uploads/2018/02/Coinye.png" alt="Coin">
+    </div>
+    <div class="col">
+      <h5><button [routerLink]="['/home']" class="btn btn-primary">Coin Home</button></h5>
+    </div>
+    <div class="col">
+      <h5><button [routerLink]="['/mine']" class="btn btn-primary">Mine Coin</button></h5>
+    </div>
+    <div class="col">
+      <h5><button [routerLink]="['/buy']" class="btn btn-primary">Buy Coin</button></h5>
+    </div>
+    <div class="col">
+      <h5><button [routerLink]="['/sell']" class="btn btn-primary">Sell Coin</button></h5>
+    </div>
+    <div class="col">
+      <h5><button [routerLink]="['/ledger']" class="btn btn-primary">View Ledger</button></h5>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</body>
